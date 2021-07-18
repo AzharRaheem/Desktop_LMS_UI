@@ -1,0 +1,11 @@
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\bin\Debug\LMS_BLL.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\bin\Debug\LMS_BLL.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\bin\Debug\LMS_DAL.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\bin\Debug\LMS_DomainModel.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\bin\Debug\EntityFramework.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\bin\Debug\LMS_DAL.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\bin\Debug\LMS_DomainModel.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\bin\Debug\EntityFramework.xml
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\obj\Debug\LMS_BLL.csprojResolveAssemblyReference.cache
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\obj\Debug\LMS_BLL.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_BLL\obj\Debug\LMS_BLL.pdb

@@ -1,0 +1,17 @@
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\LMS_DAL.dll.config
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\LMS_DAL.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\LMS_DAL.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\EntityFramework.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\LMS_DomainModel.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\LMS_DomainModel.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\EntityFramework.xml
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Release\LMS_DAL.csprojResolveAssemblyReference.cache
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Release\LMS_DAL.Migrations.initializeDb.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Release\LMS_DAL.Migrations.dataAnnotationAdded.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Release\LMS_DAL.Migrations.CategoriesTableWithDataAnnotationAdded.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Release\LMS_DAL.Migrations.UsersModelAnnotationAdded.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Release\LMS_DAL.csproj.GenerateResource.Cache
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Release\LMS_DAL.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Release\LMS_DAL.pdb

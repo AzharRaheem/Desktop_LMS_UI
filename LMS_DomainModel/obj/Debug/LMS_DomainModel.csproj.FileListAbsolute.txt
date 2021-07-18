@@ -1,0 +1,5 @@
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DomainModel\bin\Debug\LMS_DomainModel.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DomainModel\bin\Debug\LMS_DomainModel.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DomainModel\obj\Debug\LMS_DomainModel.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DomainModel\obj\Debug\LMS_DomainModel.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DomainModel\obj\Debug\LMS_DomainModel.csprojResolveAssemblyReference.cache

@@ -1,0 +1,14 @@
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\LMS_DAL.dll.config
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\LMS_DAL.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\LMS_DAL.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\EntityFramework.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\LMS_DomainModel.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\LMS_DomainModel.pdb
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\EntityFramework.xml
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.csprojResolveAssemblyReference.cache
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.Migrations.AllDataModelAdded.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.csproj.GenerateResource.Cache
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.dll
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.pdb
