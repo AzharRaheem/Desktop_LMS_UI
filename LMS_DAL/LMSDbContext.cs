@@ -16,5 +16,6 @@ namespace LMS_DAL
         public DbSet<Book> Books { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Student> Students { get; set; }
+        public DbSet<Fine> fines { get; set; }
     }
 }
