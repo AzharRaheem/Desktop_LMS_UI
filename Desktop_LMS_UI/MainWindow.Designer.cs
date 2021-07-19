@@ -158,6 +158,7 @@
             this.manageFineBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.manageFineBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.manageFineBtn.UseVisualStyleBackColor = true;
+            this.manageFineBtn.Click += new System.EventHandler(this.manageFineBtn_Click);
             // 
             // manageStudentsBtn
             // 

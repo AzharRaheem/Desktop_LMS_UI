@@ -117,5 +117,11 @@ namespace Desktop_LMS_UI
             ManageDailyReports dailyReports = new ManageDailyReports();
             openChildForm(dailyReports);
         }
+
+        private void manageFineBtn_Click(object sender, EventArgs e)
+        {
+            ManageFine manageFines = new ManageFine();
+            openChildForm(manageFines);
+        }
     }
 }
