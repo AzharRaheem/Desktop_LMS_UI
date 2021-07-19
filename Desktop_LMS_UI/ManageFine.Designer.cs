@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageFine));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -37,19 +36,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.FineErrorLbl = new System.Windows.Forms.Label();
             this.addNewBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.searchTxtBox = new Bunifu.Framework.UI.BunifuTextbox();
             this.bottomPanel = new System.Windows.Forms.Panel();
-            this.departmentsGridView = new System.Windows.Forms.DataGridView();
+            this.FinesGridView = new System.Windows.Forms.DataGridView();
             this.saveBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.roleNameLbl = new System.Windows.Forms.Label();
             this.fineTxtBox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.idGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.departmentNameGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fineValueGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.editActionGVC = new System.Windows.Forms.DataGridViewImageColumn();
             this.deleteActionGVC = new System.Windows.Forms.DataGridViewImageColumn();
             this.topPanel.SuspendLayout();
             this.bottomPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.departmentsGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinesGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // topPanel
@@ -89,7 +87,7 @@
             this.FineErrorLbl.AutoSize = true;
             this.FineErrorLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FineErrorLbl.ForeColor = System.Drawing.Color.Red;
-            this.FineErrorLbl.Location = new System.Drawing.Point(336, 113);
+            this.FineErrorLbl.Location = new System.Drawing.Point(336, 124);
             this.FineErrorLbl.Name = "FineErrorLbl";
             this.FineErrorLbl.Size = new System.Drawing.Size(17, 24);
             this.FineErrorLbl.TabIndex = 60;
@@ -134,39 +132,25 @@
             this.addNewBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addNewBtn.Click += new System.EventHandler(this.addNewBtn_Click);
             // 
-            // searchTxtBox
-            // 
-            this.searchTxtBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchTxtBox.BackColor = System.Drawing.Color.SteelBlue;
-            this.searchTxtBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("searchTxtBox.BackgroundImage")));
-            this.searchTxtBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.searchTxtBox.ForeColor = System.Drawing.Color.White;
-            this.searchTxtBox.Icon = ((System.Drawing.Image)(resources.GetObject("searchTxtBox.Icon")));
-            this.searchTxtBox.Location = new System.Drawing.Point(569, 283);
-            this.searchTxtBox.Name = "searchTxtBox";
-            this.searchTxtBox.Size = new System.Drawing.Size(243, 34);
-            this.searchTxtBox.TabIndex = 58;
-            this.searchTxtBox.text = "";
-            // 
             // bottomPanel
             // 
-            this.bottomPanel.Controls.Add(this.departmentsGridView);
+            this.bottomPanel.Controls.Add(this.FinesGridView);
             this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.bottomPanel.Location = new System.Drawing.Point(0, 323);
+            this.bottomPanel.Location = new System.Drawing.Point(0, 308);
             this.bottomPanel.Name = "bottomPanel";
-            this.bottomPanel.Size = new System.Drawing.Size(830, 353);
+            this.bottomPanel.Size = new System.Drawing.Size(830, 368);
             this.bottomPanel.TabIndex = 57;
             // 
-            // departmentsGridView
+            // FinesGridView
             // 
-            this.departmentsGridView.AllowUserToAddRows = false;
-            this.departmentsGridView.AllowUserToDeleteRows = false;
-            this.departmentsGridView.AllowUserToResizeColumns = false;
-            this.departmentsGridView.AllowUserToResizeRows = false;
+            this.FinesGridView.AllowUserToAddRows = false;
+            this.FinesGridView.AllowUserToDeleteRows = false;
+            this.FinesGridView.AllowUserToResizeColumns = false;
+            this.FinesGridView.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.departmentsGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.departmentsGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.departmentsGridView.BackgroundColor = System.Drawing.Color.White;
+            this.FinesGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.FinesGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.FinesGridView.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,11 +159,11 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.departmentsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.departmentsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.departmentsGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FinesGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.FinesGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.FinesGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idGVC,
-            this.departmentNameGVC,
+            this.fineValueGVC,
             this.editActionGVC,
             this.deleteActionGVC});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -190,17 +174,19 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.departmentsGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.departmentsGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.departmentsGridView.EnableHeadersVisualStyles = false;
-            this.departmentsGridView.Location = new System.Drawing.Point(0, 0);
-            this.departmentsGridView.Name = "departmentsGridView";
-            this.departmentsGridView.ReadOnly = true;
-            this.departmentsGridView.RowHeadersVisible = false;
-            this.departmentsGridView.RowTemplate.Height = 28;
-            this.departmentsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.departmentsGridView.Size = new System.Drawing.Size(830, 353);
-            this.departmentsGridView.TabIndex = 24;
+            this.FinesGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.FinesGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FinesGridView.EnableHeadersVisualStyles = false;
+            this.FinesGridView.Location = new System.Drawing.Point(0, 0);
+            this.FinesGridView.Name = "FinesGridView";
+            this.FinesGridView.ReadOnly = true;
+            this.FinesGridView.RowHeadersVisible = false;
+            this.FinesGridView.RowTemplate.Height = 28;
+            this.FinesGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.FinesGridView.Size = new System.Drawing.Size(830, 368);
+            this.FinesGridView.TabIndex = 24;
+            this.FinesGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FinesGridView_CellContentClick);
+            this.FinesGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FinesGridView_CellDoubleClick);
             // 
             // saveBtn
             // 
@@ -226,7 +212,7 @@
             this.saveBtn.IconVisible = false;
             this.saveBtn.IconZoom = 45D;
             this.saveBtn.IsTab = false;
-            this.saveBtn.Location = new System.Drawing.Point(452, 186);
+            this.saveBtn.Location = new System.Drawing.Point(452, 197);
             this.saveBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Normalcolor = System.Drawing.Color.SteelBlue;
@@ -239,13 +225,14 @@
             this.saveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.saveBtn.Textcolor = System.Drawing.Color.White;
             this.saveBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // roleNameLbl
             // 
             this.roleNameLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.roleNameLbl.AutoSize = true;
             this.roleNameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roleNameLbl.Location = new System.Drawing.Point(202, 119);
+            this.roleNameLbl.Location = new System.Drawing.Point(202, 130);
             this.roleNameLbl.Name = "roleNameLbl";
             this.roleNameLbl.Size = new System.Drawing.Size(138, 16);
             this.roleNameLbl.TabIndex = 55;
@@ -263,7 +250,7 @@
             this.fineTxtBox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.fineTxtBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fineTxtBox.isPassword = false;
-            this.fineTxtBox.Location = new System.Drawing.Point(202, 139);
+            this.fineTxtBox.Location = new System.Drawing.Point(202, 150);
             this.fineTxtBox.Margin = new System.Windows.Forms.Padding(4);
             this.fineTxtBox.Name = "fineTxtBox";
             this.fineTxtBox.Size = new System.Drawing.Size(354, 40);
@@ -279,13 +266,13 @@
             this.idGVC.ReadOnly = true;
             this.idGVC.Visible = false;
             // 
-            // departmentNameGVC
+            // fineValueGVC
             // 
-            this.departmentNameGVC.DataPropertyName = "fine";
-            this.departmentNameGVC.FillWeight = 272.7471F;
-            this.departmentNameGVC.HeaderText = "Fine / +Day";
-            this.departmentNameGVC.Name = "departmentNameGVC";
-            this.departmentNameGVC.ReadOnly = true;
+            this.fineValueGVC.DataPropertyName = "fine";
+            this.fineValueGVC.FillWeight = 272.7471F;
+            this.fineValueGVC.HeaderText = "Fine / +Day";
+            this.fineValueGVC.Name = "fineValueGVC";
+            this.fineValueGVC.ReadOnly = true;
             // 
             // editActionGVC
             // 
@@ -309,7 +296,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 676);
             this.Controls.Add(this.addNewBtn);
-            this.Controls.Add(this.searchTxtBox);
             this.Controls.Add(this.bottomPanel);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.roleNameLbl);
@@ -319,10 +305,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ManageFine";
             this.Text = "ManageFine";
+            this.Load += new System.EventHandler(this.ManageFine_Load);
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
             this.bottomPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.departmentsGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinesGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,15 +322,14 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label FineErrorLbl;
         private Bunifu.Framework.UI.BunifuFlatButton addNewBtn;
-        private Bunifu.Framework.UI.BunifuTextbox searchTxtBox;
         private System.Windows.Forms.Panel bottomPanel;
-        private System.Windows.Forms.DataGridView departmentsGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idGVC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn departmentNameGVC;
-        private System.Windows.Forms.DataGridViewImageColumn editActionGVC;
-        private System.Windows.Forms.DataGridViewImageColumn deleteActionGVC;
+        private System.Windows.Forms.DataGridView FinesGridView;
         private Bunifu.Framework.UI.BunifuFlatButton saveBtn;
         private System.Windows.Forms.Label roleNameLbl;
         private Bunifu.Framework.UI.BunifuMetroTextbox fineTxtBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fineValueGVC;
+        private System.Windows.Forms.DataGridViewImageColumn editActionGVC;
+        private System.Windows.Forms.DataGridViewImageColumn deleteActionGVC;
     }
 }
