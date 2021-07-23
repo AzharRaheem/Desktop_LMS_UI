@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
@@ -34,5 +35,7 @@ namespace LMS_DomainModel
         public string book_ISBN { get; set; }
         [StringLength(600)]
         public string bookImagePath { get; set; }
+
+        public List<Student> students { get; set; }
     }
 }

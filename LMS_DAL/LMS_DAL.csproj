@@ -61,6 +61,7 @@
     <Compile Include="DashboardRepo.cs" />
     <Compile Include="DepartmentRepo.cs" />
     <Compile Include="FineRepo.cs" />
+    <Compile Include="IssueBookRepo.cs" />
     <Compile Include="LMSDbContext.cs" />
     <Compile Include="Migrations\202107151603389_AllDataModelAdded.cs" />
     <Compile Include="Migrations\202107151603389_AllDataModelAdded.designer.cs">
@@ -73,6 +74,10 @@
     <Compile Include="Migrations\202107191741163_202107191739224_FineModelAdded.cs" />
     <Compile Include="Migrations\202107191741163_202107191739224_FineModelAdded.designer.cs">
       <DependentUpon>202107191741163_202107191739224_FineModelAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107231650472_IssuedBooksModelAdded.cs" />
+    <Compile Include="Migrations\202107231650472_IssuedBooksModelAdded.designer.cs">
+      <DependentUpon>202107231650472_IssuedBooksModelAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202107191741163_202107191739224_FineModelAdded.resx">
       <DependentUpon>202107191741163_202107191739224_FineModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107231650472_IssuedBooksModelAdded.resx">
+      <DependentUpon>202107231650472_IssuedBooksModelAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -33,5 +33,7 @@ namespace LMS_DomainModel
         [Required]
         public int gender { get; set; }
         public string studentImage { get; set; }
+
+        public List<Book> books { get; set; }
     }
 }

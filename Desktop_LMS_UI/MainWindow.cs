@@ -13,6 +13,7 @@ namespace Desktop_LMS_UI
 {
     public partial class MainWindow : Form
     {
+        private UserLoginVM loggedInUser;
         public MainWindow()
         {
             InitializeComponent();
@@ -20,6 +21,7 @@ namespace Desktop_LMS_UI
         public MainWindow(UserLoginVM loginUser)
         {
             InitializeComponent();
+            loggedInUser = loginUser;
             loginUserRoleLbl.Text = loginUser.roleName;
             loginUserNameLbl.Text = loginUser.loginUserFirstName + " " + loginUser.loginUserLastName;
             if(loginUser.profileImagePath != null)
@@ -78,7 +80,7 @@ namespace Desktop_LMS_UI
 
         private void issueBookBtn_Click(object sender, EventArgs e)
         {
-            IssueBook issueBook = new IssueBook();
+            IssueBook issueBook = new IssueBook(loggedInUser);
             openChildForm(issueBook);
         }
 

@@ -46,6 +46,7 @@
     <Compile Include="DepartmentBL.cs" />
     <Compile Include="FineBL.cs" />
     <Compile Include="Hash.cs" />
+    <Compile Include="IssueBookBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleBL.cs" />
     <Compile Include="StudentBL.cs" />
