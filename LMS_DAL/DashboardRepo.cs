@@ -25,6 +25,7 @@ namespace LMS_DAL
                 dashCounts.usersCount = db.Users.Count();
                 dashCounts.booksCount = db.Books.Count();
                 dashCounts.studentsCount = db.Students.Count();
+                dashCounts.issueBooksCount = db.issuedBooks.Count();
             }
             catch (Exception ex)
             {

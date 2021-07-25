@@ -18,7 +18,6 @@ C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Categories.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Dashboard.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Departments.resources
-C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.IssueBook.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Login.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.MainWindow.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Properties.Resources.resources
@@ -32,3 +31,4 @@ C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.pdb
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.ManageDailyReports.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.ManageFine.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.ManageIssueBook.resources

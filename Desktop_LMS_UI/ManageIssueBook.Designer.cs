@@ -1,6 +1,6 @@
 ﻿namespace Desktop_LMS_UI
 {
-    partial class IssueBook
+    partial class ManageIssueBook
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,14 +44,7 @@
             this.bookDD = new System.Windows.Forms.ComboBox();
             this.studentDD = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.studentGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookTitleGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.librarianIdGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.librarianGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.issueDateGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnDateGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.issueBooksGridView = new System.Windows.Forms.DataGridView();
             this.bottomPanel = new System.Windows.Forms.Panel();
             this.fineDD = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,8 +53,21 @@
             this.returnDateDTErrorLbl = new System.Windows.Forms.Label();
             this.studentDDErrorLbl = new System.Windows.Forms.Label();
             this.fineDDErrorLbl = new System.Windows.Forms.Label();
+            this.idGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentIdGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.librarianIdGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.librarianGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookIdGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookTitleGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fineIdGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fineValueGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.issueDateGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnDateGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.editActionGVC = new System.Windows.Forms.DataGridViewImageColumn();
+            this.deleteActionGVC = new System.Windows.Forms.DataGridViewImageColumn();
             this.topPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.issueBooksGridView)).BeginInit();
             this.bottomPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,12 +121,12 @@
             this.issueDateTimePicker.Enabled = false;
             this.issueDateTimePicker.ForeColor = System.Drawing.Color.White;
             this.issueDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.issueDateTimePicker.FormatCustom = null;
+            this.issueDateTimePicker.FormatCustom = "";
             this.issueDateTimePicker.Location = new System.Drawing.Point(342, 97);
             this.issueDateTimePicker.Name = "issueDateTimePicker";
             this.issueDateTimePicker.Size = new System.Drawing.Size(269, 35);
             this.issueDateTimePicker.TabIndex = 33;
-            this.issueDateTimePicker.Value = new System.DateTime(2021, 6, 17, 21, 35, 4, 782);
+            this.issueDateTimePicker.Value = new System.DateTime(2021, 7, 24, 0, 0, 0, 0);
             this.issueDateTimePicker.onValueChanged += new System.EventHandler(this.issueDateTimePicker_onValueChanged);
             // 
             // label4
@@ -156,7 +164,7 @@
             this.returnDateTimePicker.Name = "returnDateTimePicker";
             this.returnDateTimePicker.Size = new System.Drawing.Size(269, 36);
             this.returnDateTimePicker.TabIndex = 33;
-            this.returnDateTimePicker.Value = new System.DateTime(2021, 6, 17, 21, 35, 4, 782);
+            this.returnDateTimePicker.Value = new System.DateTime(2021, 7, 24, 0, 0, 0, 0);
             this.returnDateTimePicker.onValueChanged += new System.EventHandler(this.returnDateTimePicker_onValueChanged);
             // 
             // saveBtn
@@ -277,86 +285,65 @@
             this.label5.TabIndex = 45;
             this.label5.Text = "Student : ";
             // 
-            // dataGridView1
+            // issueBooksGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(3);
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.issueBooksGridView.AllowUserToAddRows = false;
+            this.issueBooksGridView.AllowUserToDeleteRows = false;
+            this.issueBooksGridView.AllowUserToResizeColumns = false;
+            this.issueBooksGridView.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.issueBooksGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.issueBooksGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.issueBooksGridView.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.issueBooksGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.issueBooksGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.issueBooksGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idGVC,
+            this.studentIdGVC,
             this.studentGVC,
-            this.bookTitleGVC,
             this.librarianIdGVC,
             this.librarianGVC,
+            this.bookIdGVC,
+            this.bookTitleGVC,
+            this.fineIdGVC,
+            this.fineValueGVC,
             this.issueDateGVC,
-            this.returnDateGVC});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(827, 360);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // idGVC
-            // 
-            this.idGVC.HeaderText = "id";
-            this.idGVC.Name = "idGVC";
-            this.idGVC.ReadOnly = true;
-            this.idGVC.Visible = false;
-            // 
-            // studentGVC
-            // 
-            this.studentGVC.HeaderText = "Student Name";
-            this.studentGVC.Name = "studentGVC";
-            this.studentGVC.ReadOnly = true;
-            // 
-            // bookTitleGVC
-            // 
-            this.bookTitleGVC.HeaderText = "Book Title";
-            this.bookTitleGVC.Name = "bookTitleGVC";
-            this.bookTitleGVC.ReadOnly = true;
-            // 
-            // librarianIdGVC
-            // 
-            this.librarianIdGVC.HeaderText = "Librarian Id";
-            this.librarianIdGVC.Name = "librarianIdGVC";
-            this.librarianIdGVC.ReadOnly = true;
-            this.librarianIdGVC.Visible = false;
-            // 
-            // librarianGVC
-            // 
-            this.librarianGVC.HeaderText = "Librarian";
-            this.librarianGVC.Name = "librarianGVC";
-            this.librarianGVC.ReadOnly = true;
-            // 
-            // issueDateGVC
-            // 
-            this.issueDateGVC.HeaderText = "Issue Date";
-            this.issueDateGVC.Name = "issueDateGVC";
-            this.issueDateGVC.ReadOnly = true;
-            // 
-            // returnDateGVC
-            // 
-            this.returnDateGVC.HeaderText = "Return Date";
-            this.returnDateGVC.Name = "returnDateGVC";
-            this.returnDateGVC.ReadOnly = true;
+            this.returnDateGVC,
+            this.editActionGVC,
+            this.deleteActionGVC});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(4, 3, 3, 4);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.issueBooksGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.issueBooksGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.issueBooksGridView.EnableHeadersVisualStyles = false;
+            this.issueBooksGridView.Location = new System.Drawing.Point(0, 0);
+            this.issueBooksGridView.Name = "issueBooksGridView";
+            this.issueBooksGridView.ReadOnly = true;
+            this.issueBooksGridView.RowHeadersVisible = false;
+            this.issueBooksGridView.RowTemplate.Height = 26;
+            this.issueBooksGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.issueBooksGridView.Size = new System.Drawing.Size(827, 360);
+            this.issueBooksGridView.TabIndex = 0;
+            this.issueBooksGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.issueBooksGridView_CellContentClick);
+            this.issueBooksGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.issueBooksGridView_CellDoubleClick);
             // 
             // bottomPanel
             // 
-            this.bottomPanel.Controls.Add(this.dataGridView1);
+            this.bottomPanel.Controls.Add(this.issueBooksGridView);
             this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bottomPanel.Location = new System.Drawing.Point(0, 317);
             this.bottomPanel.Name = "bottomPanel";
@@ -454,7 +441,111 @@
             this.fineDDErrorLbl.Text = "*";
             this.fineDDErrorLbl.Visible = false;
             // 
-            // IssueBook
+            // idGVC
+            // 
+            this.idGVC.DataPropertyName = "id";
+            this.idGVC.HeaderText = "id";
+            this.idGVC.Name = "idGVC";
+            this.idGVC.ReadOnly = true;
+            this.idGVC.Visible = false;
+            // 
+            // studentIdGVC
+            // 
+            this.studentIdGVC.DataPropertyName = "studentId";
+            this.studentIdGVC.HeaderText = "Student Id";
+            this.studentIdGVC.Name = "studentIdGVC";
+            this.studentIdGVC.ReadOnly = true;
+            this.studentIdGVC.Visible = false;
+            // 
+            // studentGVC
+            // 
+            this.studentGVC.DataPropertyName = "studentName";
+            this.studentGVC.FillWeight = 125.7933F;
+            this.studentGVC.HeaderText = "Student Name";
+            this.studentGVC.Name = "studentGVC";
+            this.studentGVC.ReadOnly = true;
+            // 
+            // librarianIdGVC
+            // 
+            this.librarianIdGVC.DataPropertyName = "librarianId";
+            this.librarianIdGVC.HeaderText = "Librarian Id";
+            this.librarianIdGVC.Name = "librarianIdGVC";
+            this.librarianIdGVC.ReadOnly = true;
+            this.librarianIdGVC.Visible = false;
+            // 
+            // librarianGVC
+            // 
+            this.librarianGVC.DataPropertyName = "librarianName";
+            this.librarianGVC.FillWeight = 125.7933F;
+            this.librarianGVC.HeaderText = "Librarian";
+            this.librarianGVC.Name = "librarianGVC";
+            this.librarianGVC.ReadOnly = true;
+            // 
+            // bookIdGVC
+            // 
+            this.bookIdGVC.DataPropertyName = "bookId";
+            this.bookIdGVC.HeaderText = "Book Id";
+            this.bookIdGVC.Name = "bookIdGVC";
+            this.bookIdGVC.ReadOnly = true;
+            this.bookIdGVC.Visible = false;
+            // 
+            // bookTitleGVC
+            // 
+            this.bookTitleGVC.DataPropertyName = "bookName";
+            this.bookTitleGVC.FillWeight = 125.7933F;
+            this.bookTitleGVC.HeaderText = "Book Title";
+            this.bookTitleGVC.Name = "bookTitleGVC";
+            this.bookTitleGVC.ReadOnly = true;
+            // 
+            // fineIdGVC
+            // 
+            this.fineIdGVC.DataPropertyName = "fineId";
+            this.fineIdGVC.HeaderText = "Fine id";
+            this.fineIdGVC.Name = "fineIdGVC";
+            this.fineIdGVC.ReadOnly = true;
+            this.fineIdGVC.Visible = false;
+            // 
+            // fineValueGVC
+            // 
+            this.fineValueGVC.DataPropertyName = "fineValue";
+            this.fineValueGVC.HeaderText = "Fine Value";
+            this.fineValueGVC.Name = "fineValueGVC";
+            this.fineValueGVC.ReadOnly = true;
+            this.fineValueGVC.Visible = false;
+            // 
+            // issueDateGVC
+            // 
+            this.issueDateGVC.DataPropertyName = "issueDate";
+            this.issueDateGVC.FillWeight = 125.7933F;
+            this.issueDateGVC.HeaderText = "Issue Date";
+            this.issueDateGVC.Name = "issueDateGVC";
+            this.issueDateGVC.ReadOnly = true;
+            // 
+            // returnDateGVC
+            // 
+            this.returnDateGVC.DataPropertyName = "returnDate";
+            this.returnDateGVC.FillWeight = 125.7933F;
+            this.returnDateGVC.HeaderText = "Return Date";
+            this.returnDateGVC.Name = "returnDateGVC";
+            this.returnDateGVC.ReadOnly = true;
+            // 
+            // editActionGVC
+            // 
+            this.editActionGVC.FillWeight = 31.94749F;
+            this.editActionGVC.HeaderText = "Edit";
+            this.editActionGVC.Image = global::Desktop_LMS_UI.Properties.Resources.pencil__1_;
+            this.editActionGVC.Name = "editActionGVC";
+            this.editActionGVC.ReadOnly = true;
+            // 
+            // deleteActionGVC
+            // 
+            this.deleteActionGVC.FillWeight = 39.08631F;
+            this.deleteActionGVC.HeaderText = "Delete";
+            this.deleteActionGVC.Image = global::Desktop_LMS_UI.Properties.Resources.delete__2_;
+            this.deleteActionGVC.Name = "deleteActionGVC";
+            this.deleteActionGVC.ReadOnly = true;
+            // 
+            // ManageIssueBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -479,11 +570,12 @@
             this.Controls.Add(this.studentDDErrorLbl);
             this.Controls.Add(this.fineDDErrorLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "IssueBook";
+            this.Name = "ManageIssueBook";
             this.Text = "IssueBook";
+            this.Load += new System.EventHandler(this.ManageIssueBook_Load);
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.issueBooksGridView)).EndInit();
             this.bottomPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -504,21 +596,27 @@
         private System.Windows.Forms.ComboBox bookDD;
         private System.Windows.Forms.ComboBox studentDD;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView issueBooksGridView;
         private System.Windows.Forms.Panel bottomPanel;
         private System.Windows.Forms.ComboBox fineDD;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idGVC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn studentGVC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bookTitleGVC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn librarianIdGVC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn librarianGVC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn issueDateGVC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn returnDateGVC;
         private System.Windows.Forms.Label bookDDErrorLbl;
         private System.Windows.Forms.Label issueDateDTErrorLbl;
         private System.Windows.Forms.Label returnDateDTErrorLbl;
         private System.Windows.Forms.Label studentDDErrorLbl;
         private System.Windows.Forms.Label fineDDErrorLbl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentIdGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn studentGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn librarianIdGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn librarianGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bookIdGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bookTitleGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fineIdGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fineValueGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn issueDateGVC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn returnDateGVC;
+        private System.Windows.Forms.DataGridViewImageColumn editActionGVC;
+        private System.Windows.Forms.DataGridViewImageColumn deleteActionGVC;
     }
 }

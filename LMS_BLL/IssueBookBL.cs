@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LMS_DomainModel.ViewModels;
+using LMS_DomainModel;
 
 namespace LMS_BLL
 {
@@ -29,6 +30,26 @@ namespace LMS_BLL
         public BaseViewModel GetAllFines()
         {
             return issueBookRepo.GetAllFinesFromDB();
+        }
+
+        public BaseViewModel SaveIssueBook(IssueBook issueBook)
+        {
+            return issueBookRepo.SaveIssueBookInDB(issueBook);
+        }
+
+        public IssueBookBaseVM GetAllIssuedBooks()
+        {
+            return issueBookRepo.GetAllIssuedBooksFromDB();
+        }
+
+        public BaseViewModel DeleteRecord(int issuedBookId)
+        {
+            return issueBookRepo.DeleteRecordFromDB(issuedBookId);
+        }
+
+        public BaseViewModel UpdateRecord(IssueBook issueBook)
+        {
+            return issueBookRepo.UpdateRecordInDB(issueBook);
         }
     }
 }

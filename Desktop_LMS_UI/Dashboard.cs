@@ -33,6 +33,7 @@ namespace Desktop_LMS_UI
                 userCountLbl.Text = dashboardCounts.usersCount.ToString();
                 booksCountLbl.Text = dashboardCounts.booksCount.ToString();
                 studentsCountLbl.Text = dashboardCounts.studentsCount.ToString();
+                issueBooksCount.Text = dashboardCounts.issueBooksCount.ToString();
             }
             else
             {

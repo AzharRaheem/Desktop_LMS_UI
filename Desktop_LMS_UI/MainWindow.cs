@@ -80,7 +80,7 @@ namespace Desktop_LMS_UI
 
         private void issueBookBtn_Click(object sender, EventArgs e)
         {
-            IssueBook issueBook = new IssueBook(loggedInUser);
+            ManageIssueBook issueBook = new ManageIssueBook(loggedInUser);
             openChildForm(issueBook);
         }
 

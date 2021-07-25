@@ -57,6 +57,8 @@
     <Compile Include="ViewModels\CategoryStatusBaseVM.cs" />
     <Compile Include="ViewModels\CategoryStatusVM.cs" />
     <Compile Include="ViewModels\DashboardCounts.cs" />
+    <Compile Include="ViewModels\IssueBookBaseVM.cs" />
+    <Compile Include="ViewModels\IssueBookVM.cs" />
     <Compile Include="ViewModels\StudentDepartmentBaseVM.cs" />
     <Compile Include="ViewModels\StudentDepartmentVM.cs" />
     <Compile Include="ViewModels\UserLoginVM.cs" />
