@@ -48,6 +48,18 @@ namespace LMS_DAL
             return result;
         }
 
+        public object GetAllBooksWithStudentsFromDB()
+        {
+            try
+            {
+                return db.issuedBooks.ToList();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
         public BaseViewModel DeleteRecordFromDB(int issuedBookId)
         {
             try

@@ -33,20 +33,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bodyPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.issueReportCard = new Bunifu.Framework.UI.BunifuCards();
-            this.issueBookDailyReportLbl = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            this.label2 = new System.Windows.Forms.Label();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.saveBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.issueReportCard = new Bunifu.Framework.UI.BunifuCards();
+            this.issueBookGetReportBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.issueBookDailyReportLbl = new System.Windows.Forms.Label();
             this.dailyReportPicBox = new System.Windows.Forms.PictureBox();
             this.topPanel.SuspendLayout();
             this.bodyPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.issueReportCard.SuspendLayout();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.issueReportCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dailyReportPicBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,36 +108,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(848, 619);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // issueReportCard
-            // 
-            this.issueReportCard.BackColor = System.Drawing.Color.White;
-            this.issueReportCard.BorderRadius = 5;
-            this.issueReportCard.BottomSahddow = true;
-            this.issueReportCard.color = System.Drawing.Color.SteelBlue;
-            this.issueReportCard.Controls.Add(this.saveBtn);
-            this.issueReportCard.Controls.Add(this.issueBookDailyReportLbl);
-            this.issueReportCard.Controls.Add(this.dailyReportPicBox);
-            this.issueReportCard.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.issueReportCard.LeftSahddow = false;
-            this.issueReportCard.Location = new System.Drawing.Point(3, 3);
-            this.issueReportCard.Name = "issueReportCard";
-            this.issueReportCard.RightSahddow = true;
-            this.issueReportCard.ShadowDepth = 20;
-            this.issueReportCard.Size = new System.Drawing.Size(418, 166);
-            this.issueReportCard.TabIndex = 0;
-            // 
-            // issueBookDailyReportLbl
-            // 
-            this.issueBookDailyReportLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.issueBookDailyReportLbl.AutoSize = true;
-            this.issueBookDailyReportLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.issueBookDailyReportLbl.ForeColor = System.Drawing.Color.SteelBlue;
-            this.issueBookDailyReportLbl.Location = new System.Drawing.Point(148, 42);
-            this.issueBookDailyReportLbl.Name = "issueBookDailyReportLbl";
-            this.issueBookDailyReportLbl.Size = new System.Drawing.Size(241, 29);
-            this.issueBookDailyReportLbl.TabIndex = 2;
-            this.issueBookDailyReportLbl.Text = "Issue Books Report";
-            // 
             // bunifuCards1
             // 
             this.bunifuCards1.BackColor = System.Drawing.Color.White;
@@ -155,18 +125,6 @@
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(418, 166);
             this.bunifuCards1.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(148, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(256, 29);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Return Books Report";
             // 
             // bunifuFlatButton1
             // 
@@ -205,6 +163,18 @@
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label2.Location = new System.Drawing.Point(148, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(256, 29);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Return Books Report";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -216,42 +186,73 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // saveBtn
+            // issueReportCard
             // 
-            this.saveBtn.Activecolor = System.Drawing.Color.SteelBlue;
-            this.saveBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.saveBtn.BackColor = System.Drawing.Color.SteelBlue;
-            this.saveBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.saveBtn.BorderRadius = 5;
-            this.saveBtn.ButtonText = "Get Report";
-            this.saveBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.saveBtn.DisabledColor = System.Drawing.Color.Gray;
-            this.saveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveBtn.Iconcolor = System.Drawing.Color.Transparent;
-            this.saveBtn.Iconimage = global::Desktop_LMS_UI.Properties.Resources.plus;
-            this.saveBtn.Iconimage_right = null;
-            this.saveBtn.Iconimage_right_Selected = null;
-            this.saveBtn.Iconimage_Selected = null;
-            this.saveBtn.IconMarginLeft = 0;
-            this.saveBtn.IconMarginRight = 0;
-            this.saveBtn.IconRightVisible = true;
-            this.saveBtn.IconRightZoom = 0D;
-            this.saveBtn.IconVisible = false;
-            this.saveBtn.IconZoom = 45D;
-            this.saveBtn.IsTab = false;
-            this.saveBtn.Location = new System.Drawing.Point(181, 87);
-            this.saveBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.saveBtn.Name = "saveBtn";
-            this.saveBtn.Normalcolor = System.Drawing.Color.SteelBlue;
-            this.saveBtn.OnHovercolor = System.Drawing.Color.Orange;
-            this.saveBtn.OnHoverTextColor = System.Drawing.Color.SteelBlue;
-            this.saveBtn.selected = false;
-            this.saveBtn.Size = new System.Drawing.Size(171, 40);
-            this.saveBtn.TabIndex = 37;
-            this.saveBtn.Text = "Get Report";
-            this.saveBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.saveBtn.Textcolor = System.Drawing.Color.White;
-            this.saveBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueReportCard.BackColor = System.Drawing.Color.White;
+            this.issueReportCard.BorderRadius = 5;
+            this.issueReportCard.BottomSahddow = true;
+            this.issueReportCard.color = System.Drawing.Color.SteelBlue;
+            this.issueReportCard.Controls.Add(this.issueBookGetReportBtn);
+            this.issueReportCard.Controls.Add(this.issueBookDailyReportLbl);
+            this.issueReportCard.Controls.Add(this.dailyReportPicBox);
+            this.issueReportCard.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.issueReportCard.LeftSahddow = false;
+            this.issueReportCard.Location = new System.Drawing.Point(3, 3);
+            this.issueReportCard.Name = "issueReportCard";
+            this.issueReportCard.RightSahddow = true;
+            this.issueReportCard.ShadowDepth = 20;
+            this.issueReportCard.Size = new System.Drawing.Size(418, 166);
+            this.issueReportCard.TabIndex = 0;
+            // 
+            // issueBookGetReportBtn
+            // 
+            this.issueBookGetReportBtn.Activecolor = System.Drawing.Color.SteelBlue;
+            this.issueBookGetReportBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.issueBookGetReportBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.issueBookGetReportBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.issueBookGetReportBtn.BorderRadius = 5;
+            this.issueBookGetReportBtn.ButtonText = "Get Report";
+            this.issueBookGetReportBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.issueBookGetReportBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.issueBookGetReportBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueBookGetReportBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.issueBookGetReportBtn.Iconimage = global::Desktop_LMS_UI.Properties.Resources.plus;
+            this.issueBookGetReportBtn.Iconimage_right = null;
+            this.issueBookGetReportBtn.Iconimage_right_Selected = null;
+            this.issueBookGetReportBtn.Iconimage_Selected = null;
+            this.issueBookGetReportBtn.IconMarginLeft = 0;
+            this.issueBookGetReportBtn.IconMarginRight = 0;
+            this.issueBookGetReportBtn.IconRightVisible = true;
+            this.issueBookGetReportBtn.IconRightZoom = 0D;
+            this.issueBookGetReportBtn.IconVisible = false;
+            this.issueBookGetReportBtn.IconZoom = 45D;
+            this.issueBookGetReportBtn.IsTab = false;
+            this.issueBookGetReportBtn.Location = new System.Drawing.Point(181, 87);
+            this.issueBookGetReportBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.issueBookGetReportBtn.Name = "issueBookGetReportBtn";
+            this.issueBookGetReportBtn.Normalcolor = System.Drawing.Color.SteelBlue;
+            this.issueBookGetReportBtn.OnHovercolor = System.Drawing.Color.Orange;
+            this.issueBookGetReportBtn.OnHoverTextColor = System.Drawing.Color.SteelBlue;
+            this.issueBookGetReportBtn.selected = false;
+            this.issueBookGetReportBtn.Size = new System.Drawing.Size(171, 40);
+            this.issueBookGetReportBtn.TabIndex = 37;
+            this.issueBookGetReportBtn.Text = "Get Report";
+            this.issueBookGetReportBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.issueBookGetReportBtn.Textcolor = System.Drawing.Color.White;
+            this.issueBookGetReportBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueBookGetReportBtn.Click += new System.EventHandler(this.issueBookGetReportBtn_Click);
+            // 
+            // issueBookDailyReportLbl
+            // 
+            this.issueBookDailyReportLbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.issueBookDailyReportLbl.AutoSize = true;
+            this.issueBookDailyReportLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issueBookDailyReportLbl.ForeColor = System.Drawing.Color.SteelBlue;
+            this.issueBookDailyReportLbl.Location = new System.Drawing.Point(148, 42);
+            this.issueBookDailyReportLbl.Name = "issueBookDailyReportLbl";
+            this.issueBookDailyReportLbl.Size = new System.Drawing.Size(241, 29);
+            this.issueBookDailyReportLbl.TabIndex = 2;
+            this.issueBookDailyReportLbl.Text = "Issue Books Report";
             // 
             // dailyReportPicBox
             // 
@@ -278,11 +279,11 @@
             this.topPanel.PerformLayout();
             this.bodyPanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.issueReportCard.ResumeLayout(false);
-            this.issueReportCard.PerformLayout();
             this.bunifuCards1.ResumeLayout(false);
             this.bunifuCards1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.issueReportCard.ResumeLayout(false);
+            this.issueReportCard.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dailyReportPicBox)).EndInit();
             this.ResumeLayout(false);
 
@@ -302,6 +303,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuFlatButton saveBtn;
+        private Bunifu.Framework.UI.BunifuFlatButton issueBookGetReportBtn;
     }
 }

@@ -16,5 +16,11 @@ namespace Desktop_LMS_UI
         {
             InitializeComponent();
         }
+
+        private void issueBookGetReportBtn_Click(object sender, EventArgs e)
+        {
+            DailyReports dailyReport = new DailyReports();
+            dailyReport.ShowDialog();
+        }
     }
 }

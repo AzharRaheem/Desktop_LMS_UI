@@ -32,6 +32,11 @@ namespace LMS_BLL
             return issueBookRepo.GetAllFinesFromDB();
         }
 
+        public object GetAllBooksWithStudents()
+        {
+            return issueBookRepo.GetAllBooksWithStudentsFromDB();
+        }
+
         public BaseViewModel SaveIssueBook(IssueBook issueBook)
         {
             return issueBookRepo.SaveIssueBookInDB(issueBook);
