@@ -140,11 +140,11 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReturnBook.cs">
+    <Compile Include="ManageReturnBooks.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReturnBook.Designer.cs">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
+    <Compile Include="ManageReturnBooks.Designer.cs">
+      <DependentUpon>ManageReturnBooks.cs</DependentUpon>
     </Compile>
     <Compile Include="Roles.cs">
       <SubType>Form</SubType>
@@ -207,8 +207,8 @@
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReturnBook.resx">
-      <DependentUpon>ReturnBook.cs</DependentUpon>
+    <EmbeddedResource Include="ManageReturnBooks.resx">
+      <DependentUpon>ManageReturnBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Roles.resx">
       <DependentUpon>Roles.cs</DependentUpon>

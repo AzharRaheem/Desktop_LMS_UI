@@ -22,7 +22,6 @@ C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.MainWindow.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Properties.Resources.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Register.resources
-C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.ReturnBook.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Roles.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Students.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.Users.resources
@@ -52,3 +51,4 @@ C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.DailyReports.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.ManageReturnBooks.resources

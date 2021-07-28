@@ -15,3 +15,4 @@ C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.Migrations.FineModelAdded.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.Migrations._202107191739224_FineModelAdded.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.Migrations.IssuedBooksModelAdded.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\LMS_DAL\obj\Debug\LMS_DAL.Migrations.ReturnedBooksModelAdded.resources
