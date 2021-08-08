@@ -86,7 +86,7 @@ namespace Desktop_LMS_UI
 
         private void returnBookBtn_Click(object sender, EventArgs e)
         {
-            ManageReturnBooks returnBook = new ManageReturnBooks(loggedInUser);
+            ReturnBook returnBook = new ReturnBook();
             openChildForm(returnBook);
         }
 

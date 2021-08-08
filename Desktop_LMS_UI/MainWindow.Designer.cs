@@ -129,7 +129,7 @@
             this.manageDepartmentsBtn.ForeColor = System.Drawing.Color.White;
             this.manageDepartmentsBtn.Image = global::Desktop_LMS_UI.Properties.Resources.courthouse;
             this.manageDepartmentsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageDepartmentsBtn.Location = new System.Drawing.Point(4, 316);
+            this.manageDepartmentsBtn.Location = new System.Drawing.Point(4, 323);
             this.manageDepartmentsBtn.Name = "manageDepartmentsBtn";
             this.manageDepartmentsBtn.Size = new System.Drawing.Size(279, 49);
             this.manageDepartmentsBtn.TabIndex = 5;
@@ -150,7 +150,7 @@
             this.manageFineBtn.ForeColor = System.Drawing.Color.White;
             this.manageFineBtn.Image = global::Desktop_LMS_UI.Properties.Resources.payment_method;
             this.manageFineBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageFineBtn.Location = new System.Drawing.Point(3, 426);
+            this.manageFineBtn.Location = new System.Drawing.Point(3, 433);
             this.manageFineBtn.Name = "manageFineBtn";
             this.manageFineBtn.Size = new System.Drawing.Size(279, 49);
             this.manageFineBtn.TabIndex = 4;
@@ -171,7 +171,7 @@
             this.manageStudentsBtn.ForeColor = System.Drawing.Color.White;
             this.manageStudentsBtn.Image = global::Desktop_LMS_UI.Properties.Resources.students;
             this.manageStudentsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageStudentsBtn.Location = new System.Drawing.Point(3, 371);
+            this.manageStudentsBtn.Location = new System.Drawing.Point(3, 378);
             this.manageStudentsBtn.Name = "manageStudentsBtn";
             this.manageStudentsBtn.Size = new System.Drawing.Size(279, 49);
             this.manageStudentsBtn.TabIndex = 3;
@@ -192,7 +192,7 @@
             this.dailyReportBtn.ForeColor = System.Drawing.Color.White;
             this.dailyReportBtn.Image = global::Desktop_LMS_UI.Properties.Resources.report;
             this.dailyReportBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dailyReportBtn.Location = new System.Drawing.Point(4, 591);
+            this.dailyReportBtn.Location = new System.Drawing.Point(4, 598);
             this.dailyReportBtn.Name = "dailyReportBtn";
             this.dailyReportBtn.Size = new System.Drawing.Size(279, 49);
             this.dailyReportBtn.TabIndex = 3;
@@ -213,7 +213,7 @@
             this.returnBookBtn.ForeColor = System.Drawing.Color.White;
             this.returnBookBtn.Image = global::Desktop_LMS_UI.Properties.Resources._return;
             this.returnBookBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.returnBookBtn.Location = new System.Drawing.Point(4, 536);
+            this.returnBookBtn.Location = new System.Drawing.Point(4, 543);
             this.returnBookBtn.Name = "returnBookBtn";
             this.returnBookBtn.Size = new System.Drawing.Size(279, 49);
             this.returnBookBtn.TabIndex = 3;
@@ -234,7 +234,7 @@
             this.issueBookBtn.ForeColor = System.Drawing.Color.White;
             this.issueBookBtn.Image = global::Desktop_LMS_UI.Properties.Resources.read;
             this.issueBookBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.issueBookBtn.Location = new System.Drawing.Point(4, 481);
+            this.issueBookBtn.Location = new System.Drawing.Point(4, 488);
             this.issueBookBtn.Name = "issueBookBtn";
             this.issueBookBtn.Size = new System.Drawing.Size(279, 49);
             this.issueBookBtn.TabIndex = 3;
@@ -255,7 +255,7 @@
             this.manageBooksBtn.ForeColor = System.Drawing.Color.White;
             this.manageBooksBtn.Image = global::Desktop_LMS_UI.Properties.Resources.book;
             this.manageBooksBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageBooksBtn.Location = new System.Drawing.Point(3, 260);
+            this.manageBooksBtn.Location = new System.Drawing.Point(3, 267);
             this.manageBooksBtn.Name = "manageBooksBtn";
             this.manageBooksBtn.Size = new System.Drawing.Size(279, 49);
             this.manageBooksBtn.TabIndex = 3;
@@ -276,7 +276,7 @@
             this.manageCategoryBtn.ForeColor = System.Drawing.Color.White;
             this.manageCategoryBtn.Image = global::Desktop_LMS_UI.Properties.Resources.backend;
             this.manageCategoryBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageCategoryBtn.Location = new System.Drawing.Point(3, 205);
+            this.manageCategoryBtn.Location = new System.Drawing.Point(3, 212);
             this.manageCategoryBtn.Name = "manageCategoryBtn";
             this.manageCategoryBtn.Size = new System.Drawing.Size(279, 49);
             this.manageCategoryBtn.TabIndex = 3;
@@ -297,7 +297,7 @@
             this.manageRolesBtn.ForeColor = System.Drawing.Color.White;
             this.manageRolesBtn.Image = global::Desktop_LMS_UI.Properties.Resources.role;
             this.manageRolesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageRolesBtn.Location = new System.Drawing.Point(3, 150);
+            this.manageRolesBtn.Location = new System.Drawing.Point(3, 157);
             this.manageRolesBtn.Name = "manageRolesBtn";
             this.manageRolesBtn.Size = new System.Drawing.Size(279, 49);
             this.manageRolesBtn.TabIndex = 3;
@@ -318,7 +318,7 @@
             this.manageUsersBtn.ForeColor = System.Drawing.Color.White;
             this.manageUsersBtn.Image = global::Desktop_LMS_UI.Properties.Resources.team;
             this.manageUsersBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.manageUsersBtn.Location = new System.Drawing.Point(3, 95);
+            this.manageUsersBtn.Location = new System.Drawing.Point(3, 102);
             this.manageUsersBtn.Name = "manageUsersBtn";
             this.manageUsersBtn.Size = new System.Drawing.Size(279, 49);
             this.manageUsersBtn.TabIndex = 3;
@@ -339,7 +339,7 @@
             this.dashboardBtn.ForeColor = System.Drawing.Color.White;
             this.dashboardBtn.Image = global::Desktop_LMS_UI.Properties.Resources.business_report;
             this.dashboardBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dashboardBtn.Location = new System.Drawing.Point(3, 40);
+            this.dashboardBtn.Location = new System.Drawing.Point(3, 47);
             this.dashboardBtn.Name = "dashboardBtn";
             this.dashboardBtn.Size = new System.Drawing.Size(279, 49);
             this.dashboardBtn.TabIndex = 3;
@@ -374,7 +374,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 37);
+            this.panel2.Size = new System.Drawing.Size(286, 41);
             this.panel2.TabIndex = 1;
             // 
             // leftTopPanel
