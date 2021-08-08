@@ -1,4 +1,5 @@
 ﻿using LMS_BLL;
+using LMS_DomainModel;
 using LMS_DomainModel.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,20 @@ namespace Desktop_LMS_UI
 {
     public partial class ManageReturnBooks : Form
     {
+        private UserLoginVM loggedUser;
         ReturnBookBL returnBooksBll;
         public ManageReturnBooks()
         {
             InitializeComponent();
             returnBooksBll = new ReturnBookBL();
         }
-       
+        public ManageReturnBooks(UserLoginVM loggedInUser)
+        {
+            InitializeComponent();
+            returnBooksBll = new ReturnBookBL();
+            loggedUser = loggedInUser;
+        }
+
         private void EnableControls()
         {
             bookDD.Enabled = true;
@@ -84,11 +92,91 @@ namespace Desktop_LMS_UI
         {
             PopulateDropDown();
             ClearAllControls();
+            PopulateGridView();
+        }
+        private void PopulateGridView()
+        {
+            ReturnBookBaseVM result = returnBooksBll.GetAllReturnedBooksRecord();
+            if (result.isSuccess)
+            {
+                ReturnedBooksGridView.DataSource = result.allReturnedBooks;
+            }
+            else
+            {
+                MessageBox.Show(result.message , "Error" , MessageBoxButtons.OK , MessageBoxIcon.Error);
+            }
         }
 
         private void returnSaveBtn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(returnDateTimePicker.Value.ToString());
+            DialogResult dr = MessageBox.Show("Do you want to return this book?" , "Confirm" , MessageBoxButtons.YesNo , MessageBoxIcon.Question);
+            if(dr == DialogResult.Yes)
+            {
+                ReturnBook returnBook = new ReturnBook();
+                IssueBook issueBookDetail = returnBooksBll.isIssuedBook(Convert.ToInt32(bookDD.SelectedValue), Convert.ToInt32(studentDD.SelectedValue));
+                if(issueBookDetail != null)
+                {
+                    if (issueBookDetail.returnDate.Date == returnDateTimePicker.Value.Date || returnDateTimePicker.Value.Date <= issueBookDetail.returnDate.Date)
+                    {
+                        returnBook.bookId = Convert.ToInt32(bookDD.SelectedValue);
+                        returnBook.librarianId = loggedUser.id;
+                        returnBook.studentId = Convert.ToInt32(studentDD.SelectedValue);
+                        returnBook.deliveryStatus = "On-Time";
+                        returnBook.returnDate = returnDateTimePicker.Value.Date;
+                        returnBook.fine = 0;
+                    }
+                    else
+                    {
+                        returnBook.bookId = Convert.ToInt32(bookDD.SelectedValue);
+                        returnBook.librarianId = loggedUser.id;
+                        returnBook.studentId = Convert.ToInt32(studentDD.SelectedValue);
+                        returnBook.deliveryStatus = "Late";
+                        returnBook.returnDate = returnDateTimePicker.Value.Date;
+                        TimeSpan dueDuration = DateTime.Today.Date.Subtract(issueBookDetail.returnDate.Date);
+                        var days = dueDuration.Days;
+                        float fineValue = returnBooksBll.GetFineValue(issueBookDetail.fineId);
+                        returnBook.fine = fineValue * days;
+                        MessageBox.Show("Please Submit the fine of RS: "+returnBook.fine+" before return the book." , "Fine Payment" , MessageBoxButtons.OK , MessageBoxIcon.Information);
+                    }
+                    BaseViewModel result = returnBooksBll.SaveReturnBook(returnBook);
+                    if (result.isSuccess)
+                    {
+                        MessageBox.Show(result.message , "Success" , MessageBoxButtons.OK , MessageBoxIcon.Information);
+                        PopulateGridView();
+                        ClearAllControls();
+                    }
+                    else
+                    {
+                        MessageBox.Show(result.message , "Error" , MessageBoxButtons.OK , MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Sorry! No Record found." , "Error" , MessageBoxButtons.OK , MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void ReturnedBooksGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex != -1 && e.ColumnIndex != -1)
+            {
+                DialogResult dr = MessageBox.Show("Do you want to delete this record?" , "Confirm" , MessageBoxButtons.YesNo , MessageBoxIcon.Question);
+                if(dr == DialogResult.Yes)
+                {
+                    int returnRecordId = Convert.ToInt32(ReturnedBooksGridView.Rows[e.RowIndex].Cells["idGVC"].Value.ToString());
+                    BaseViewModel result = returnBooksBll.DeleteReturnedBookRecord(returnRecordId);
+                    if (result.isSuccess)
+                    {
+                        MessageBox.Show(result.message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        PopulateGridView();
+                    }
+                    else
+                    {
+                        MessageBox.Show(result.message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
         }
     }
 }

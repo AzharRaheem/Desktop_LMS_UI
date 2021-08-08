@@ -60,6 +60,9 @@
     <Compile Include="ViewModels\DashboardCounts.cs" />
     <Compile Include="ViewModels\IssueBookBaseVM.cs" />
     <Compile Include="ViewModels\IssueBookVM.cs" />
+    <Compile Include="ViewModels\IssuedBookDetailsVM.cs" />
+    <Compile Include="ViewModels\ReturnBookBaseVM.cs" />
+    <Compile Include="ViewModels\ReturnBookVM.cs" />
     <Compile Include="ViewModels\StudentDepartmentBaseVM.cs" />
     <Compile Include="ViewModels\StudentDepartmentVM.cs" />
     <Compile Include="ViewModels\UserLoginVM.cs" />

@@ -38,7 +38,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.issueBooksGridView = new System.Windows.Forms.DataGridView();
+            this.ReturnedBooksGridView = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
+            this.addNewReturnBookBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.returnSaveBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.studentDD = new System.Windows.Forms.ComboBox();
+            this.studentDDErrorLbl = new System.Windows.Forms.Label();
+            this.bookDDErrorLbl = new System.Windows.Forms.Label();
+            this.bookDD = new System.Windows.Forms.ComboBox();
             this.idGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentIdGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,16 +57,9 @@
             this.deliveryStatusGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fineValueGVC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteActionGVC = new System.Windows.Forms.DataGridViewImageColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.addNewReturnBookBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.returnSaveBtn = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.studentDD = new System.Windows.Forms.ComboBox();
-            this.studentDDErrorLbl = new System.Windows.Forms.Label();
-            this.bookDDErrorLbl = new System.Windows.Forms.Label();
-            this.bookDD = new System.Windows.Forms.ComboBox();
             this.topPanel.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.issueBooksGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReturnedBooksGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // topPanel
@@ -132,23 +132,23 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.issueBooksGridView);
+            this.panel2.Controls.Add(this.ReturnedBooksGridView);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 241);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(797, 436);
             this.panel2.TabIndex = 43;
             // 
-            // issueBooksGridView
+            // ReturnedBooksGridView
             // 
-            this.issueBooksGridView.AllowUserToAddRows = false;
-            this.issueBooksGridView.AllowUserToDeleteRows = false;
-            this.issueBooksGridView.AllowUserToResizeColumns = false;
-            this.issueBooksGridView.AllowUserToResizeRows = false;
+            this.ReturnedBooksGridView.AllowUserToAddRows = false;
+            this.ReturnedBooksGridView.AllowUserToDeleteRows = false;
+            this.ReturnedBooksGridView.AllowUserToResizeColumns = false;
+            this.ReturnedBooksGridView.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.issueBooksGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.issueBooksGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.issueBooksGridView.BackgroundColor = System.Drawing.Color.White;
+            this.ReturnedBooksGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.ReturnedBooksGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.ReturnedBooksGridView.BackgroundColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
@@ -157,9 +157,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.issueBooksGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.issueBooksGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.issueBooksGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ReturnedBooksGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.ReturnedBooksGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ReturnedBooksGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idGVC,
             this.studentIdGVC,
             this.studentGVC,
@@ -179,105 +179,18 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.issueBooksGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.issueBooksGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.issueBooksGridView.EnableHeadersVisualStyles = false;
-            this.issueBooksGridView.Location = new System.Drawing.Point(0, 0);
-            this.issueBooksGridView.Name = "issueBooksGridView";
-            this.issueBooksGridView.ReadOnly = true;
-            this.issueBooksGridView.RowHeadersVisible = false;
-            this.issueBooksGridView.RowTemplate.Height = 26;
-            this.issueBooksGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.issueBooksGridView.Size = new System.Drawing.Size(797, 436);
-            this.issueBooksGridView.TabIndex = 1;
-            // 
-            // idGVC
-            // 
-            this.idGVC.DataPropertyName = "id";
-            this.idGVC.HeaderText = "id";
-            this.idGVC.Name = "idGVC";
-            this.idGVC.ReadOnly = true;
-            this.idGVC.Visible = false;
-            // 
-            // studentIdGVC
-            // 
-            this.studentIdGVC.DataPropertyName = "studentId";
-            this.studentIdGVC.HeaderText = "Student Id";
-            this.studentIdGVC.Name = "studentIdGVC";
-            this.studentIdGVC.ReadOnly = true;
-            this.studentIdGVC.Visible = false;
-            // 
-            // studentGVC
-            // 
-            this.studentGVC.DataPropertyName = "studentName";
-            this.studentGVC.FillWeight = 125.1376F;
-            this.studentGVC.HeaderText = "Student Name";
-            this.studentGVC.Name = "studentGVC";
-            this.studentGVC.ReadOnly = true;
-            // 
-            // librarianIdGVC
-            // 
-            this.librarianIdGVC.DataPropertyName = "librarianId";
-            this.librarianIdGVC.HeaderText = "Librarian Id";
-            this.librarianIdGVC.Name = "librarianIdGVC";
-            this.librarianIdGVC.ReadOnly = true;
-            this.librarianIdGVC.Visible = false;
-            // 
-            // librarianGVC
-            // 
-            this.librarianGVC.DataPropertyName = "librarianName";
-            this.librarianGVC.FillWeight = 125.1376F;
-            this.librarianGVC.HeaderText = "Librarian";
-            this.librarianGVC.Name = "librarianGVC";
-            this.librarianGVC.ReadOnly = true;
-            // 
-            // bookIdGVC
-            // 
-            this.bookIdGVC.DataPropertyName = "bookId";
-            this.bookIdGVC.HeaderText = "Book Id";
-            this.bookIdGVC.Name = "bookIdGVC";
-            this.bookIdGVC.ReadOnly = true;
-            this.bookIdGVC.Visible = false;
-            // 
-            // bookTitleGVC
-            // 
-            this.bookTitleGVC.DataPropertyName = "bookName";
-            this.bookTitleGVC.FillWeight = 125.1376F;
-            this.bookTitleGVC.HeaderText = "Book Title";
-            this.bookTitleGVC.Name = "bookTitleGVC";
-            this.bookTitleGVC.ReadOnly = true;
-            // 
-            // returnDateGVC
-            // 
-            this.returnDateGVC.DataPropertyName = "returnDate";
-            this.returnDateGVC.FillWeight = 125.1376F;
-            this.returnDateGVC.HeaderText = "Return Date";
-            this.returnDateGVC.Name = "returnDateGVC";
-            this.returnDateGVC.ReadOnly = true;
-            // 
-            // deliveryStatusGVC
-            // 
-            this.deliveryStatusGVC.DataPropertyName = "issueDate";
-            this.deliveryStatusGVC.FillWeight = 125.1376F;
-            this.deliveryStatusGVC.HeaderText = "Delivery Status";
-            this.deliveryStatusGVC.Name = "deliveryStatusGVC";
-            this.deliveryStatusGVC.ReadOnly = true;
-            // 
-            // fineValueGVC
-            // 
-            this.fineValueGVC.DataPropertyName = "fineValue";
-            this.fineValueGVC.FillWeight = 99.47874F;
-            this.fineValueGVC.HeaderText = "Fine";
-            this.fineValueGVC.Name = "fineValueGVC";
-            this.fineValueGVC.ReadOnly = true;
-            // 
-            // deleteActionGVC
-            // 
-            this.deleteActionGVC.FillWeight = 42.88619F;
-            this.deleteActionGVC.HeaderText = "Delete";
-            this.deleteActionGVC.Image = global::Desktop_LMS_UI.Properties.Resources.delete__2_;
-            this.deleteActionGVC.Name = "deleteActionGVC";
-            this.deleteActionGVC.ReadOnly = true;
+            this.ReturnedBooksGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ReturnedBooksGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReturnedBooksGridView.EnableHeadersVisualStyles = false;
+            this.ReturnedBooksGridView.Location = new System.Drawing.Point(0, 0);
+            this.ReturnedBooksGridView.Name = "ReturnedBooksGridView";
+            this.ReturnedBooksGridView.ReadOnly = true;
+            this.ReturnedBooksGridView.RowHeadersVisible = false;
+            this.ReturnedBooksGridView.RowTemplate.Height = 26;
+            this.ReturnedBooksGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ReturnedBooksGridView.Size = new System.Drawing.Size(797, 436);
+            this.ReturnedBooksGridView.TabIndex = 1;
+            this.ReturnedBooksGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ReturnedBooksGridView_CellContentClick);
             // 
             // label5
             // 
@@ -421,6 +334,94 @@
             this.bookDD.Size = new System.Drawing.Size(269, 33);
             this.bookDD.TabIndex = 61;
             // 
+            // idGVC
+            // 
+            this.idGVC.DataPropertyName = "id";
+            this.idGVC.HeaderText = "id";
+            this.idGVC.Name = "idGVC";
+            this.idGVC.ReadOnly = true;
+            this.idGVC.Visible = false;
+            // 
+            // studentIdGVC
+            // 
+            this.studentIdGVC.DataPropertyName = "studentId";
+            this.studentIdGVC.HeaderText = "Student Id";
+            this.studentIdGVC.Name = "studentIdGVC";
+            this.studentIdGVC.ReadOnly = true;
+            this.studentIdGVC.Visible = false;
+            // 
+            // studentGVC
+            // 
+            this.studentGVC.DataPropertyName = "studentName";
+            this.studentGVC.FillWeight = 125.1376F;
+            this.studentGVC.HeaderText = "Student Name";
+            this.studentGVC.Name = "studentGVC";
+            this.studentGVC.ReadOnly = true;
+            // 
+            // librarianIdGVC
+            // 
+            this.librarianIdGVC.DataPropertyName = "librarianId";
+            this.librarianIdGVC.HeaderText = "Librarian Id";
+            this.librarianIdGVC.Name = "librarianIdGVC";
+            this.librarianIdGVC.ReadOnly = true;
+            this.librarianIdGVC.Visible = false;
+            // 
+            // librarianGVC
+            // 
+            this.librarianGVC.DataPropertyName = "librarianName";
+            this.librarianGVC.FillWeight = 125.1376F;
+            this.librarianGVC.HeaderText = "Librarian";
+            this.librarianGVC.Name = "librarianGVC";
+            this.librarianGVC.ReadOnly = true;
+            // 
+            // bookIdGVC
+            // 
+            this.bookIdGVC.DataPropertyName = "bookId";
+            this.bookIdGVC.HeaderText = "Book Id";
+            this.bookIdGVC.Name = "bookIdGVC";
+            this.bookIdGVC.ReadOnly = true;
+            this.bookIdGVC.Visible = false;
+            // 
+            // bookTitleGVC
+            // 
+            this.bookTitleGVC.DataPropertyName = "bookTitle";
+            this.bookTitleGVC.FillWeight = 125.1376F;
+            this.bookTitleGVC.HeaderText = "Book Title";
+            this.bookTitleGVC.Name = "bookTitleGVC";
+            this.bookTitleGVC.ReadOnly = true;
+            // 
+            // returnDateGVC
+            // 
+            this.returnDateGVC.DataPropertyName = "returnDate";
+            this.returnDateGVC.FillWeight = 125.1376F;
+            this.returnDateGVC.HeaderText = "Return Date";
+            this.returnDateGVC.Name = "returnDateGVC";
+            this.returnDateGVC.ReadOnly = true;
+            // 
+            // deliveryStatusGVC
+            // 
+            this.deliveryStatusGVC.DataPropertyName = "DeliveryStatus";
+            this.deliveryStatusGVC.FillWeight = 125.1376F;
+            this.deliveryStatusGVC.HeaderText = "Delivery Status";
+            this.deliveryStatusGVC.Name = "deliveryStatusGVC";
+            this.deliveryStatusGVC.ReadOnly = true;
+            // 
+            // fineValueGVC
+            // 
+            this.fineValueGVC.DataPropertyName = "fine";
+            this.fineValueGVC.FillWeight = 99.47874F;
+            this.fineValueGVC.HeaderText = "Fine";
+            this.fineValueGVC.Name = "fineValueGVC";
+            this.fineValueGVC.ReadOnly = true;
+            // 
+            // deleteActionGVC
+            // 
+            this.deleteActionGVC.FillWeight = 42.88619F;
+            this.deleteActionGVC.HeaderText = "Delete";
+            this.deleteActionGVC.Image = global::Desktop_LMS_UI.Properties.Resources.delete__2_;
+            this.deleteActionGVC.Name = "deleteActionGVC";
+            this.deleteActionGVC.ReadOnly = true;
+            // 
             // ManageReturnBooks
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,7 +446,7 @@
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.issueBooksGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ReturnedBooksGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,7 +468,7 @@
         private System.Windows.Forms.Label studentDDErrorLbl;
         private System.Windows.Forms.Label bookDDErrorLbl;
         private System.Windows.Forms.ComboBox bookDD;
-        private System.Windows.Forms.DataGridView issueBooksGridView;
+        private System.Windows.Forms.DataGridView ReturnedBooksGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn idGVC;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentIdGVC;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentGVC;
