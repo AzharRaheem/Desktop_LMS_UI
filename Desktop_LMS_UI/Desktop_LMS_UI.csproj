@@ -132,6 +132,12 @@
     <Compile Include="ManageFine.Designer.cs">
       <DependentUpon>ManageFine.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageReturnBookReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageReturnBookReport.Designer.cs">
+      <DependentUpon>ManageReturnBookReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.cs">
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageFine.resx">
       <DependentUpon>ManageFine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageReturnBookReport.resx">
+      <DependentUpon>ManageReturnBookReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -32,6 +32,11 @@ namespace LMS_BLL
             return returnBookRepo.IssuedBookDetailsFromDB(bookId , studentId);
         }
 
+        public object GetAllReturnedBooks()
+        {
+            return returnBookRepo.GetAllReturnedBooksFromDB();
+        }
+
         public float GetFineValue(int fineId)
         {
             return returnBookRepo.GetFineValueFromDB(fineId);

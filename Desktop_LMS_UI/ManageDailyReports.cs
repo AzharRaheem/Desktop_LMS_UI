@@ -22,5 +22,11 @@ namespace Desktop_LMS_UI
             DailyReports dailyReport = new DailyReports();
             dailyReport.ShowDialog();
         }
+
+        private void onGetReturnedReportBtn_Click(object sender, EventArgs e)
+        {
+            ManageReturnBookReport dailyReport = new ManageReturnBookReport();
+            dailyReport.ShowDialog();
+        }
     }
 }

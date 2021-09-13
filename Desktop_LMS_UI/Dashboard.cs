@@ -34,11 +34,17 @@ namespace Desktop_LMS_UI
                 booksCountLbl.Text = dashboardCounts.booksCount.ToString();
                 studentsCountLbl.Text = dashboardCounts.studentsCount.ToString();
                 issueBooksCount.Text = dashboardCounts.issueBooksCount.ToString();
+                returnBooksCountLbl.Text = dashboardCounts.returnedBooksCount.ToString();
             }
             else
             {
                 MessageBox.Show(dashboardCounts.message , "Error" , MessageBoxButtons.OK , MessageBoxIcon.Error);
             }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

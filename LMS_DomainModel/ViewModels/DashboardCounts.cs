@@ -15,5 +15,6 @@ namespace LMS_DomainModel.ViewModels
         public int booksCount { get; set; }
         public int studentsCount { get; set; }
         public int issueBooksCount { get; set; }
+        public int returnedBooksCount { get; set; }
     }
 }

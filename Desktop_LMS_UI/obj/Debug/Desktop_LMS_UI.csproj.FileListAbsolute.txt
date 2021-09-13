@@ -52,3 +52,4 @@ C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.DailyReports.resources
 C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.ManageReturnBooks.resources
+C:\Users\azhar\Documents\Visual Studio 2015\Projects\Desktop_LMS_UI\Desktop_LMS_UI\obj\Debug\Desktop_LMS_UI.ManageReturnBookReport.resources

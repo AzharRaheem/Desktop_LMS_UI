@@ -41,6 +41,11 @@ namespace LMS_DAL
             }
         }
 
+        public object GetAllReturnedBooksFromDB()
+        {
+            return db.returnedBooks.ToList();
+        }
+
         public BaseViewModel SaveReturnBookInDB(ReturnBook returnBook)
         {
             try
